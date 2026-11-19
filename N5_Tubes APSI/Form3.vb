@@ -130,42 +130,63 @@ Public Class Form3
     End Sub
 
     Private Sub MuatLayanan(Optional kataKunci As String = "")
+        Dim sql As String
 
-        Dim cari As String = "*" & kataKunci & "*"
-
-        Dim sql As String =
-            "SELECT Kode_Layanan, Nama_Layanan, " &
-            "Status_Layanan, Harga_Layanan, Estimasi_Hari " &
-            "FROM [Data_Layanan] " &
-            "WHERE Kode_Layanan LIKE ? " &
-            "OR Nama_Layanan LIKE ? " &
+        If kataKunci.Trim() = "" Then
+            sql =
+            "SELECT Kode_Layanan,Nama_Layanan,Status_Layanan," &
+            "Harga_Layanan,Estimasi_Hari FROM Data_Layanan " &
             "ORDER BY Nama_Layanan"
 
-        LoadGrid(dgvCekLayanan, sql, cari, cari)
+            LoadGrid(dgvCekLayanan, sql)
+        Else
+            sql =
+            "SELECT Kode_Layanan,Nama_Layanan,Status_Layanan," &
+            "Harga_Layanan,Estimasi_Hari FROM Data_Layanan " &
+            "WHERE InStr(1,Nz(Kode_Layanan,''),?,1)>0 " &
+            "OR InStr(1,Nz(Nama_Layanan,''),?,1)>0 " &
+            "ORDER BY Nama_Layanan"
 
+            LoadGrid(dgvCekLayanan, sql, kataKunci.Trim(), kataKunci.Trim())
+        End If
     End Sub
 
     Private Sub MuatPengerjaan(Optional kataKunci As String = "")
+        Dim sql As String
 
-        Dim cari As String = "*" & kataKunci & "*"
-
-        Dim sql As String =
-            "SELECT P.Kode_Pesanan, PR.Kode_Produk, " &
-            "P.Nama_Pelanggan, PR.Nama_Layanan_Saat_Pesan, " &
-            "PG.Tanggal_Mulai, PG.Tanggal_Selesai, " &
+        If kataKunci.Trim() = "" Then
+            sql =
+            "SELECT P.Kode_Pesanan,PR.Kode_Produk," &
+            "P.Nama_Pelanggan,PR.Nama_Layanan_Saat_Pesan," &
+            "PG.Tanggal_Mulai,PG.Tanggal_Selesai," &
             "PG.Status_Pengerjaan " &
             "FROM ([Data_Pesanan] AS P " &
             "INNER JOIN [Data_Produk] AS PR " &
             "ON P.Kode_Pesanan=PR.Kode_Pesanan) " &
             "LEFT JOIN [Data_Pengerjaan] AS PG " &
             "ON PR.Kode_Produk=PG.Kode_Produk " &
-            "WHERE P.Kode_Pesanan LIKE ? " &
-            "OR P.Nama_Pelanggan LIKE ? " &
-            "OR PR.Kode_Produk LIKE ? " &
             "ORDER BY P.Tanggal_Pesanan DESC"
 
-        LoadGrid(dgvCekPengerjaan, sql, cari, cari, cari)
+            LoadGrid(dgvCekPengerjaan, sql)
+        Else
+            sql =
+            "SELECT P.Kode_Pesanan,PR.Kode_Produk," &
+            "P.Nama_Pelanggan,PR.Nama_Layanan_Saat_Pesan," &
+            "PG.Tanggal_Mulai,PG.Tanggal_Selesai," &
+            "PG.Status_Pengerjaan " &
+            "FROM ([Data_Pesanan] AS P " &
+            "INNER JOIN [Data_Produk] AS PR " &
+            "ON P.Kode_Pesanan=PR.Kode_Pesanan) " &
+            "LEFT JOIN [Data_Pengerjaan] AS PG " &
+            "ON PR.Kode_Produk=PG.Kode_Produk " &
+            "WHERE InStr(1,Nz(P.Kode_Pesanan,''),?,1)>0 " &
+            "OR InStr(1,Nz(P.Nama_Pelanggan,''),?,1)>0 " &
+            "OR InStr(1,Nz(PR.Kode_Produk,''),?,1)>0 " &
+            "ORDER BY P.Tanggal_Pesanan DESC"
 
+            LoadGrid(dgvCekPengerjaan, sql,
+                 kataKunci.Trim(), kataKunci.Trim(), kataKunci.Trim())
+        End If
     End Sub
 
     Private Sub TampilkanNamaLayanan(sender As Object, e As EventArgs)

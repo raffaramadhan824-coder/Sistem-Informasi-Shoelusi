@@ -606,20 +606,34 @@ Public Class Form5
     End Sub
 
     Private Sub MuatCekPenggunaanBB(kataKunci As String)
-        Dim cari As String = "*" & kataKunci.Trim() & "*"
-
         Dim sql As String =
-            "SELECT U.Tanggal_Penggunaan, U.Kode_Pengerjaan, B.Nama_Bahan_Baku, " &
-            "U.Jumlah_Penggunaan, B.Satuan, PG.Status_Pengerjaan AS Kondisi_Laporan, " &
-            "A.Nama AS Nama_Teknisi " &
-            "FROM ((Data_Penggunaan_Bahan_Baku AS U " &
-            "INNER JOIN Data_Bahan_Baku AS B ON U.Kode_Bahan_Baku=B.Kode_Bahan_Baku) " &
-            "INNER JOIN Data_Pengerjaan AS PG ON U.Kode_Pengerjaan=PG.Kode_Pengerjaan) " &
-            "INNER JOIN Data_Akun AS A ON PG.No_ID=A.No_ID " &
-            "WHERE B.Nama_Bahan_Baku LIKE ? OR U.Kode_Pengerjaan LIKE ? " &
-            "OR A.Nama LIKE ? ORDER BY U.Tanggal_Penggunaan DESC"
+        "SELECT U.Tanggal_Penggunaan,U.Kode_Pengerjaan," &
+        "B.Nama_Bahan_Baku,U.Jumlah_Penggunaan,B.Satuan," &
+        "PG.Status_Pengerjaan AS Kondisi_Laporan," &
+        "A.Nama AS Nama_Teknisi " &
+        "FROM ((Data_Penggunaan_Bahan_Baku AS U " &
+        "INNER JOIN Data_Bahan_Baku AS B " &
+        "ON U.Kode_Bahan_Baku=B.Kode_Bahan_Baku) " &
+        "INNER JOIN Data_Pengerjaan AS PG " &
+        "ON U.Kode_Pengerjaan=PG.Kode_Pengerjaan) " &
+        "INNER JOIN Data_Akun AS A ON PG.No_ID=A.No_ID "
 
-        LoadGrid(dgvCekPenggunaanBB, sql, cari, cari, cari)
+        If kataKunci.Trim() <> "" Then
+            sql &=
+            "WHERE InStr(1,Nz(B.Nama_Bahan_Baku,''),?,1)>0 " &
+            "OR InStr(1,Nz(U.Kode_Pengerjaan,''),?,1)>0 " &
+            "OR InStr(1,Nz(A.Nama,''),?,1)>0 "
+        End If
+
+        sql &= "ORDER BY U.Tanggal_Penggunaan DESC"
+
+        If kataKunci.Trim() = "" Then
+            LoadGrid(dgvCekPenggunaanBB, sql)
+        Else
+            LoadGrid(dgvCekPenggunaanBB, sql,
+                 kataKunci.Trim(), kataKunci.Trim(), kataKunci.Trim())
+        End If
+
         AturGrid(dgvCekPenggunaanBB)
     End Sub
 
@@ -639,17 +653,30 @@ Public Class Form5
     End Sub
 
     Private Sub MuatCekPenjualan(kataKunci As String)
-        Dim cari As String = "*" & kataKunci.Trim() & "*"
-
         Dim sql As String =
-            "SELECT P.Kode_Penjualan, P.Tanggal_Penjualan, P.Kode_Pesanan, " &
-            "O.Nama_Pelanggan, P.Total_Biaya, P.Metode_Pembayaran, P.Status_Pembayaran " &
-            "FROM Data_Penjualan AS P INNER JOIN Data_Pesanan AS O " &
-            "ON P.Kode_Pesanan=O.Kode_Pesanan " &
-            "WHERE P.Kode_Penjualan LIKE ? OR P.Kode_Pesanan LIKE ? " &
-            "OR O.Nama_Pelanggan LIKE ? ORDER BY P.Tanggal_Penjualan DESC"
+        "SELECT P.Kode_Penjualan,P.Tanggal_Penjualan," &
+        "P.Kode_Pesanan,O.Nama_Pelanggan,P.Total_Biaya," &
+        "P.Metode_Pembayaran,P.Status_Pembayaran " &
+        "FROM Data_Penjualan AS P " &
+        "INNER JOIN Data_Pesanan AS O " &
+        "ON P.Kode_Pesanan=O.Kode_Pesanan "
 
-        LoadGrid(dgvCekPenjualan, sql, cari, cari, cari)
+        If kataKunci.Trim() <> "" Then
+            sql &=
+            "WHERE InStr(1,Nz(P.Kode_Penjualan,''),?,1)>0 " &
+            "OR InStr(1,Nz(P.Kode_Pesanan,''),?,1)>0 " &
+            "OR InStr(1,Nz(O.Nama_Pelanggan,''),?,1)>0 "
+        End If
+
+        sql &= "ORDER BY P.Tanggal_Penjualan DESC"
+
+        If kataKunci.Trim() = "" Then
+            LoadGrid(dgvCekPenjualan, sql)
+        Else
+            LoadGrid(dgvCekPenjualan, sql,
+                 kataKunci.Trim(), kataKunci.Trim(), kataKunci.Trim())
+        End If
+
         AturGrid(dgvCekPenjualan)
     End Sub
 

@@ -94,37 +94,37 @@ Public Class Form4
     End Sub
 
     Private Sub MuatCekPesanan(Optional kataKunci As String = "")
-
-        Dim cari As String = "*" & kataKunci & "*"
-
         Dim sql As String =
-            "SELECT P.Kode_Pesanan, PR.Kode_Produk, " &
-            "P.Nama_Pelanggan, PR.Nama_Layanan_Saat_Pesan, " &
-            "PR.Jenis_Bahan_Produk, P.Tanggal_Pesanan, " &
-            "P.Status_Pesanan " &
-            "FROM [Data_Pesanan] AS P " &
-            "INNER JOIN [Data_Produk] AS PR " &
-            "ON P.Kode_Pesanan=PR.Kode_Pesanan " &
-            "WHERE PR.Kode_Produk NOT IN " &
-            "(SELECT Kode_Produk FROM [Data_Pengerjaan]) " &
-            "AND (P.Status_Pesanan Is Null OR P.Status_Pesanan <> 'Selesai') " &
-            "AND (P.Kode_Pesanan LIKE ? " &
-            "OR PR.Kode_Produk LIKE ? " &
-            "OR P.Nama_Pelanggan LIKE ? " &
-            "OR PR.Nama_Layanan_Saat_Pesan LIKE ?) " &
-            "ORDER BY P.Tanggal_Pesanan ASC"
+        "SELECT P.Kode_Pesanan,PR.Kode_Produk," &
+        "P.Nama_Pelanggan,PR.Nama_Layanan_Saat_Pesan," &
+        "PR.Jenis_Bahan_Produk,P.Tanggal_Pesanan," &
+        "P.Status_Pesanan " &
+        "FROM [Data_Pesanan] AS P " &
+        "INNER JOIN [Data_Produk] AS PR " &
+        "ON P.Kode_Pesanan=PR.Kode_Pesanan " &
+        "WHERE PR.Kode_Produk NOT IN " &
+        "(SELECT Kode_Produk FROM [Data_Pengerjaan]) " &
+        "AND (P.Status_Pesanan Is Null OR P.Status_Pesanan<>'Selesai') "
 
-        LoadGrid(
-            dgvCekPesanan,
-            sql,
-            cari,
-            cari,
-            cari,
-            cari
-        )
+        If kataKunci.Trim() <> "" Then
+            sql &=
+            "AND (InStr(1,Nz(P.Kode_Pesanan,''),?,1)>0 " &
+            "OR InStr(1,Nz(PR.Kode_Produk,''),?,1)>0 " &
+            "OR InStr(1,Nz(P.Nama_Pelanggan,''),?,1)>0 " &
+            "OR InStr(1,Nz(PR.Nama_Layanan_Saat_Pesan,''),?,1)>0) "
+        End If
+
+        sql &= "ORDER BY P.Tanggal_Pesanan ASC"
+
+        If kataKunci.Trim() = "" Then
+            LoadGrid(dgvCekPesanan, sql)
+        Else
+            LoadGrid(dgvCekPesanan, sql,
+                 kataKunci.Trim(), kataKunci.Trim(),
+                 kataKunci.Trim(), kataKunci.Trim())
+        End If
 
         AturTampilanGrid()
-
     End Sub
 
     Private Sub MuatPengerjaan()
