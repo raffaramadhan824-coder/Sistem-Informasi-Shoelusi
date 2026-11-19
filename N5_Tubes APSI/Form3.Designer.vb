@@ -39,6 +39,11 @@ Partial Class Form3
         Me.txtCariCekLayanan = New System.Windows.Forms.TextBox()
         Me.btnCariCekLayanan = New System.Windows.Forms.Button()
         Me.dgvCekLayanan = New System.Windows.Forms.DataGridView()
+        Me.dgvCekLayananCol1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekLayananCol2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekLayananCol3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekLayananCol4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekLayananCol5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lbltxtPesananNoHP = New System.Windows.Forms.Label()
         Me.tpCekPengerjaan = New System.Windows.Forms.TabPage()
         Me.lblTitleCekPengerjaan = New System.Windows.Forms.Label()
@@ -65,6 +70,8 @@ Partial Class Form3
         Me.txtPenjualanKode = New System.Windows.Forms.TextBox()
         Me.lblTitlePenjualan = New System.Windows.Forms.Label()
         Me.pnlPenjualan = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtPenjualanStatus = New System.Windows.Forms.TextBox()
         Me.lbltxtPenjualanPesanan = New System.Windows.Forms.Label()
         Me.txtPenjualanPesanan = New System.Windows.Forms.TextBox()
         Me.lbltxtPenjualanTanggal = New System.Windows.Forms.Label()
@@ -82,22 +89,15 @@ Partial Class Form3
         Me.tabMain = New System.Windows.Forms.TabControl()
         Me.tpPenjualan = New System.Windows.Forms.TabPage()
         Me.dgvPenjualan = New System.Windows.Forms.DataGridView()
-        Me.tpPesanan = New System.Windows.Forms.TabPage()
-        Me.lblTitlePesanan = New System.Windows.Forms.Label()
-        Me.lblBrand = New System.Windows.Forms.Label()
-        Me.dgvCekLayananCol1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekLayananCol2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekLayananCol3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekLayananCol4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekLayananCol5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.txtPenjualanStatus = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvPenjualanCol1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvPenjualanCol2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvPenjualanCol3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvPenjualanCol4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvPenjualanCol5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvcol6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tpPesanan = New System.Windows.Forms.TabPage()
+        Me.lblTitlePesanan = New System.Windows.Forms.Label()
+        Me.lblBrand = New System.Windows.Forms.Label()
         CType(Me.dgvPesanan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpCekLayanan.SuspendLayout()
         CType(Me.dgvCekLayanan, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -289,6 +289,46 @@ Partial Class Form3
         Me.dgvCekLayanan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvCekLayanan.Size = New System.Drawing.Size(1150, 440)
         Me.dgvCekLayanan.TabIndex = 4
+        '
+        'dgvCekLayananCol1
+        '
+        Me.dgvCekLayananCol1.HeaderText = "Kode Layanan"
+        Me.dgvCekLayananCol1.MinimumWidth = 6
+        Me.dgvCekLayananCol1.Name = "dgvCekLayananCol1"
+        Me.dgvCekLayananCol1.ReadOnly = True
+        Me.dgvCekLayananCol1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekLayananCol2
+        '
+        Me.dgvCekLayananCol2.HeaderText = "Nama Layanan"
+        Me.dgvCekLayananCol2.MinimumWidth = 6
+        Me.dgvCekLayananCol2.Name = "dgvCekLayananCol2"
+        Me.dgvCekLayananCol2.ReadOnly = True
+        Me.dgvCekLayananCol2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekLayananCol3
+        '
+        Me.dgvCekLayananCol3.HeaderText = "Status"
+        Me.dgvCekLayananCol3.MinimumWidth = 6
+        Me.dgvCekLayananCol3.Name = "dgvCekLayananCol3"
+        Me.dgvCekLayananCol3.ReadOnly = True
+        Me.dgvCekLayananCol3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekLayananCol4
+        '
+        Me.dgvCekLayananCol4.HeaderText = "Harga"
+        Me.dgvCekLayananCol4.MinimumWidth = 6
+        Me.dgvCekLayananCol4.Name = "dgvCekLayananCol4"
+        Me.dgvCekLayananCol4.ReadOnly = True
+        Me.dgvCekLayananCol4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekLayananCol5
+        '
+        Me.dgvCekLayananCol5.HeaderText = "Estimasi"
+        Me.dgvCekLayananCol5.MinimumWidth = 6
+        Me.dgvCekLayananCol5.Name = "dgvCekLayananCol5"
+        Me.dgvCekLayananCol5.ReadOnly = True
+        Me.dgvCekLayananCol5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'lbltxtPesananNoHP
         '
@@ -599,6 +639,26 @@ Partial Class Form3
         Me.pnlPenjualan.Size = New System.Drawing.Size(1150, 160)
         Me.pnlPenjualan.TabIndex = 1
         '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(918, 16)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(165, 23)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Status Pembayaran"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'txtPenjualanStatus
+        '
+        Me.txtPenjualanStatus.Font = New System.Drawing.Font("Arial", 10.0!)
+        Me.txtPenjualanStatus.Location = New System.Drawing.Point(921, 43)
+        Me.txtPenjualanStatus.Name = "txtPenjualanStatus"
+        Me.txtPenjualanStatus.Size = New System.Drawing.Size(162, 27)
+        Me.txtPenjualanStatus.TabIndex = 14
+        '
         'lbltxtPenjualanPesanan
         '
         Me.lbltxtPenjualanPesanan.BackColor = System.Drawing.Color.Transparent
@@ -800,102 +860,6 @@ Partial Class Form3
         Me.dgvPenjualan.Size = New System.Drawing.Size(1150, 325)
         Me.dgvPenjualan.TabIndex = 2
         '
-        'tpPesanan
-        '
-        Me.tpPesanan.BackColor = System.Drawing.Color.SteelBlue
-        Me.tpPesanan.Controls.Add(Me.lblTitlePesanan)
-        Me.tpPesanan.Controls.Add(Me.pnlPesanan)
-        Me.tpPesanan.Controls.Add(Me.dgvPesanan)
-        Me.tpPesanan.Location = New System.Drawing.Point(4, 28)
-        Me.tpPesanan.Name = "tpPesanan"
-        Me.tpPesanan.Size = New System.Drawing.Size(1202, 558)
-        Me.tpPesanan.TabIndex = 1
-        Me.tpPesanan.Text = "Pesanan"
-        '
-        'lblTitlePesanan
-        '
-        Me.lblTitlePesanan.BackColor = System.Drawing.Color.Transparent
-        Me.lblTitlePesanan.Font = New System.Drawing.Font("Arial", 17.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitlePesanan.ForeColor = System.Drawing.Color.White
-        Me.lblTitlePesanan.Location = New System.Drawing.Point(22, 12)
-        Me.lblTitlePesanan.Name = "lblTitlePesanan"
-        Me.lblTitlePesanan.Size = New System.Drawing.Size(1120, 35)
-        Me.lblTitlePesanan.TabIndex = 0
-        Me.lblTitlePesanan.Text = "PESANAN"
-        Me.lblTitlePesanan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblBrand
-        '
-        Me.lblBrand.BackColor = System.Drawing.Color.Transparent
-        Me.lblBrand.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBrand.ForeColor = System.Drawing.Color.White
-        Me.lblBrand.Location = New System.Drawing.Point(22, 16)
-        Me.lblBrand.Name = "lblBrand"
-        Me.lblBrand.Size = New System.Drawing.Size(940, 45)
-        Me.lblBrand.TabIndex = 4
-        Me.lblBrand.Text = "SHOELUSI  |  SISTEM INFORMASI PENGELOLAAN SERVIS SEPATU"
-        Me.lblBrand.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'dgvCekLayananCol1
-        '
-        Me.dgvCekLayananCol1.HeaderText = "Kode Layanan"
-        Me.dgvCekLayananCol1.MinimumWidth = 6
-        Me.dgvCekLayananCol1.Name = "dgvCekLayananCol1"
-        Me.dgvCekLayananCol1.ReadOnly = True
-        Me.dgvCekLayananCol1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekLayananCol2
-        '
-        Me.dgvCekLayananCol2.HeaderText = "Nama Layanan"
-        Me.dgvCekLayananCol2.MinimumWidth = 6
-        Me.dgvCekLayananCol2.Name = "dgvCekLayananCol2"
-        Me.dgvCekLayananCol2.ReadOnly = True
-        Me.dgvCekLayananCol2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekLayananCol3
-        '
-        Me.dgvCekLayananCol3.HeaderText = "Status"
-        Me.dgvCekLayananCol3.MinimumWidth = 6
-        Me.dgvCekLayananCol3.Name = "dgvCekLayananCol3"
-        Me.dgvCekLayananCol3.ReadOnly = True
-        Me.dgvCekLayananCol3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekLayananCol4
-        '
-        Me.dgvCekLayananCol4.HeaderText = "Harga"
-        Me.dgvCekLayananCol4.MinimumWidth = 6
-        Me.dgvCekLayananCol4.Name = "dgvCekLayananCol4"
-        Me.dgvCekLayananCol4.ReadOnly = True
-        Me.dgvCekLayananCol4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekLayananCol5
-        '
-        Me.dgvCekLayananCol5.HeaderText = "Estimasi"
-        Me.dgvCekLayananCol5.MinimumWidth = 6
-        Me.dgvCekLayananCol5.Name = "dgvCekLayananCol5"
-        Me.dgvCekLayananCol5.ReadOnly = True
-        Me.dgvCekLayananCol5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'txtPenjualanStatus
-        '
-        Me.txtPenjualanStatus.Font = New System.Drawing.Font("Arial", 10.0!)
-        Me.txtPenjualanStatus.Location = New System.Drawing.Point(921, 43)
-        Me.txtPenjualanStatus.Name = "txtPenjualanStatus"
-        Me.txtPenjualanStatus.Size = New System.Drawing.Size(162, 27)
-        Me.txtPenjualanStatus.TabIndex = 14
-        '
-        'Label1
-        '
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(918, 16)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(165, 23)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Status Pembayaran"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'dgvPenjualanCol1
         '
         Me.dgvPenjualanCol1.HeaderText = "Kode Penjualan"
@@ -942,6 +906,42 @@ Partial Class Form3
         Me.dgvcol6.MinimumWidth = 6
         Me.dgvcol6.Name = "dgvcol6"
         Me.dgvcol6.ReadOnly = True
+        '
+        'tpPesanan
+        '
+        Me.tpPesanan.BackColor = System.Drawing.Color.SteelBlue
+        Me.tpPesanan.Controls.Add(Me.lblTitlePesanan)
+        Me.tpPesanan.Controls.Add(Me.pnlPesanan)
+        Me.tpPesanan.Controls.Add(Me.dgvPesanan)
+        Me.tpPesanan.Location = New System.Drawing.Point(4, 28)
+        Me.tpPesanan.Name = "tpPesanan"
+        Me.tpPesanan.Size = New System.Drawing.Size(1202, 558)
+        Me.tpPesanan.TabIndex = 1
+        Me.tpPesanan.Text = "Pesanan"
+        '
+        'lblTitlePesanan
+        '
+        Me.lblTitlePesanan.BackColor = System.Drawing.Color.Transparent
+        Me.lblTitlePesanan.Font = New System.Drawing.Font("Arial", 17.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitlePesanan.ForeColor = System.Drawing.Color.White
+        Me.lblTitlePesanan.Location = New System.Drawing.Point(22, 12)
+        Me.lblTitlePesanan.Name = "lblTitlePesanan"
+        Me.lblTitlePesanan.Size = New System.Drawing.Size(1120, 35)
+        Me.lblTitlePesanan.TabIndex = 0
+        Me.lblTitlePesanan.Text = "PESANAN"
+        Me.lblTitlePesanan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblBrand
+        '
+        Me.lblBrand.BackColor = System.Drawing.Color.Transparent
+        Me.lblBrand.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBrand.ForeColor = System.Drawing.Color.White
+        Me.lblBrand.Location = New System.Drawing.Point(22, 16)
+        Me.lblBrand.Name = "lblBrand"
+        Me.lblBrand.Size = New System.Drawing.Size(940, 45)
+        Me.lblBrand.TabIndex = 4
+        Me.lblBrand.Text = "SHOELUSI  |  SISTEM INFORMASI PENGELOLAAN SERVIS SEPATU"
+        Me.lblBrand.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Form3
         '

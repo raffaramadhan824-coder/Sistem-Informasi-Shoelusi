@@ -11,3 +11,20 @@ D:\PRAK APSI\Tubes\N5_Tubes APSI\obj\Debug\N5_Tubes APSI.vbproj.CoreCompileInput
 D:\PRAK APSI\Tubes\N5_Tubes APSI\obj\Debug\N5_Tubes APSI.exe
 D:\PRAK APSI\Tubes\N5_Tubes APSI\obj\Debug\N5_Tubes APSI.xml
 D:\PRAK APSI\Tubes\N5_Tubes APSI\obj\Debug\N5_Tubes APSI.pdb
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\bin\Debug\N5_Tubes APSI.exe.config
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\bin\Debug\N5_Tubes APSI.exe
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\bin\Debug\N5_Tubes APSI.pdb
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\bin\Debug\N5_Tubes APSI.xml
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes APSI.vbproj.AssemblyReference.cache
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes_APSI.Form1.resources
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes_APSI.Form2.resources
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes_APSI.Form3.resources
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes_APSI.Form4.resources
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes_APSI.Form5.resources
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes_APSI.Form6.resources
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes_APSI.Resources.resources
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes APSI.vbproj.GenerateResource.cache
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes APSI.vbproj.CoreCompileInputs.cache
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes APSI.exe
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes APSI.xml
+D:\PRAK APSI\ACARA 5\Sistem-Informasi-Shoelusi\N5_Tubes APSI\obj\Debug\N5_Tubes APSI.pdb

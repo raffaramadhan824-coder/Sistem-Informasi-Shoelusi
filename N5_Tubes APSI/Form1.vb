@@ -132,12 +132,18 @@ Public Class Form1
 
             End If
             AddHandler dashboard.FormClosed,
-                Sub(sender2 As Object,
-                    e2 As FormClosedEventArgs)
+    Sub(sender2 As Object,
+        e2 As FormClosedEventArgs)
 
-                    Me.Close()
+        Me.Show()
 
-                End Sub
+        txtNoID.Clear()
+        txtNama.Clear()
+        txtPassword.Clear()
+
+        rbKasir.Checked = True
+
+    End Sub
 
             Me.Hide()
 
