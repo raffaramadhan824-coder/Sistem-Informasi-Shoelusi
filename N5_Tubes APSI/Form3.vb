@@ -37,6 +37,8 @@ Public Class Form3
         AddHandler dgvPesanan.CellClick, AddressOf dgvPesanan_CellClick
         AddHandler dgvPenjualan.CellClick, AddressOf dgvPenjualan_CellClick
         AddHandler dgvCekLayanan.CellDoubleClick, AddressOf dgvCekLayanan_CellDoubleClick
+        pnlPesanan.AutoScroll = True
+        pnlPesanan.AutoScrollMinSize = New Drawing.Size(1250, 0)
     End Sub
 
     Private Sub AturInputPesanan()
