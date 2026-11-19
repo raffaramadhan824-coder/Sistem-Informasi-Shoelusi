@@ -33,9 +33,9 @@ Partial Class Form2
         Me.btnUbahPassword = New System.Windows.Forms.Button()
         Me.lnkKembali = New System.Windows.Forms.LinkLabel()
         Me.pnlBrand = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblLogo = New System.Windows.Forms.Label()
         Me.lblTagline = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pnlForgot.SuspendLayout()
         Me.pnlBrand.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -166,6 +166,16 @@ Partial Class Form2
         Me.pnlBrand.Size = New System.Drawing.Size(490, 585)
         Me.pnlBrand.TabIndex = 4
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.N5_Tubes_APSI.My.Resources.Resources.Logo
+        Me.PictureBox1.Location = New System.Drawing.Point(124, 138)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(247, 228)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
+        '
         'lblLogo
         '
         Me.lblLogo.BackColor = System.Drawing.Color.Transparent
@@ -189,16 +199,6 @@ Partial Class Form2
         Me.lblTagline.TabIndex = 1
         Me.lblTagline.Text = "Sistem Informasi Pengelolaan Servis Sepatu" & Global.Microsoft.VisualBasic.ChrW(10) & "dan Persediaan Bahan Baku"
         Me.lblTagline.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.N5_Tubes_APSI.My.Resources.Resources.Logo
-        Me.PictureBox1.Location = New System.Drawing.Point(124, 138)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(247, 228)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
         '
         'Form2
         '
