@@ -47,6 +47,11 @@ Partial Class Form5
         Me.txtCariCekPenjualan = New System.Windows.Forms.TextBox()
         Me.btnCariCekPenjualan = New System.Windows.Forms.Button()
         Me.dgvCekPenjualan = New System.Windows.Forms.DataGridView()
+        Me.dgvCekPenjualanCol1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekPenjualanCol2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekPenjualanCol3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekPenjualanCol4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekPenjualanCol5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tpCekPenjualan = New System.Windows.Forms.TabPage()
         Me.dgvHitungROPCol6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvHitungROPCol7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -72,6 +77,11 @@ Partial Class Form5
         Me.lblTitleHitungROP = New System.Windows.Forms.Label()
         Me.pnlHitungROP = New System.Windows.Forms.Panel()
         Me.dgvPersediaanBB = New System.Windows.Forms.DataGridView()
+        Me.dgvPersediaanBBCol1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvPersediaanBBCol2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvPersediaanBBCol3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvPersediaanBBCol4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvPersediaanBBCol5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lbltxtStokKode = New System.Windows.Forms.Label()
         Me.txtStokKode = New System.Windows.Forms.TextBox()
         Me.lbltxtStokNama = New System.Windows.Forms.Label()
@@ -96,6 +106,11 @@ Partial Class Form5
         Me.btnHapusPengadaanBB = New System.Windows.Forms.Button()
         Me.btnBersihkanPengadaanBB = New System.Windows.Forms.Button()
         Me.dgvPengadaanBB = New System.Windows.Forms.DataGridView()
+        Me.dgvPengadaanBBCol1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvPengadaanBBCol2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvPengadaanBBCol4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvPengadaanBBCol5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvPengadaanBBCol6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lblBrand = New System.Windows.Forms.Label()
         Me.lblActor = New System.Windows.Forms.Label()
         Me.lbltxtStokSatuan = New System.Windows.Forms.Label()
@@ -108,6 +123,12 @@ Partial Class Form5
         Me.txtCariCekPenggunaanBB = New System.Windows.Forms.TextBox()
         Me.btnCariCekPenggunaanBB = New System.Windows.Forms.Button()
         Me.dgvCekPenggunaanBB = New System.Windows.Forms.DataGridView()
+        Me.dgvCekPenggunaanBBCol1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekPenggunaanBBCol2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekPenggunaanBBCol3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekPenggunaanBBCol4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekPenggunaanBBCol5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvCekPenggunaanBBCol6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.btnUbahPersediaanBB = New System.Windows.Forms.Button()
         Me.btnHapusPersediaanBB = New System.Windows.Forms.Button()
@@ -117,27 +138,6 @@ Partial Class Form5
         Me.tpPersediaanBB = New System.Windows.Forms.TabPage()
         Me.lblTitlePersediaanBB = New System.Windows.Forms.Label()
         Me.tpHitungROP = New System.Windows.Forms.TabPage()
-        Me.dgvPengadaanBBCol1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvPengadaanBBCol2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvPengadaanBBCol4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvPengadaanBBCol5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvPengadaanBBCol6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvPersediaanBBCol1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvPersediaanBBCol2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvPersediaanBBCol3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvPersediaanBBCol4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvPersediaanBBCol5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekPenggunaanBBCol1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekPenggunaanBBCol2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekPenggunaanBBCol3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekPenggunaanBBCol4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekPenggunaanBBCol5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekPenggunaanBBCol6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekPenjualanCol1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekPenjualanCol2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekPenjualanCol3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekPenjualanCol4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvCekPenjualanCol5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnlHitungEOQ.SuspendLayout()
         Me.tpHitungEOQ.SuspendLayout()
         CType(Me.dgvHitungEOQ, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -443,6 +443,46 @@ Partial Class Form5
         Me.dgvCekPenjualan.Size = New System.Drawing.Size(1150, 440)
         Me.dgvCekPenjualan.TabIndex = 4
         '
+        'dgvCekPenjualanCol1
+        '
+        Me.dgvCekPenjualanCol1.HeaderText = "Kode Penjualan"
+        Me.dgvCekPenjualanCol1.MinimumWidth = 6
+        Me.dgvCekPenjualanCol1.Name = "dgvCekPenjualanCol1"
+        Me.dgvCekPenjualanCol1.ReadOnly = True
+        Me.dgvCekPenjualanCol1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekPenjualanCol2
+        '
+        Me.dgvCekPenjualanCol2.HeaderText = "Tanggal"
+        Me.dgvCekPenjualanCol2.MinimumWidth = 6
+        Me.dgvCekPenjualanCol2.Name = "dgvCekPenjualanCol2"
+        Me.dgvCekPenjualanCol2.ReadOnly = True
+        Me.dgvCekPenjualanCol2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekPenjualanCol3
+        '
+        Me.dgvCekPenjualanCol3.HeaderText = "Kode Pesanan"
+        Me.dgvCekPenjualanCol3.MinimumWidth = 6
+        Me.dgvCekPenjualanCol3.Name = "dgvCekPenjualanCol3"
+        Me.dgvCekPenjualanCol3.ReadOnly = True
+        Me.dgvCekPenjualanCol3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekPenjualanCol4
+        '
+        Me.dgvCekPenjualanCol4.HeaderText = "Total (Rp)"
+        Me.dgvCekPenjualanCol4.MinimumWidth = 6
+        Me.dgvCekPenjualanCol4.Name = "dgvCekPenjualanCol4"
+        Me.dgvCekPenjualanCol4.ReadOnly = True
+        Me.dgvCekPenjualanCol4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekPenjualanCol5
+        '
+        Me.dgvCekPenjualanCol5.HeaderText = "Metode Pembayaran"
+        Me.dgvCekPenjualanCol5.MinimumWidth = 6
+        Me.dgvCekPenjualanCol5.Name = "dgvCekPenjualanCol5"
+        Me.dgvCekPenjualanCol5.ReadOnly = True
+        Me.dgvCekPenjualanCol5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
         'tpCekPenjualan
         '
         Me.tpCekPenjualan.BackColor = System.Drawing.Color.SteelBlue
@@ -725,6 +765,46 @@ Partial Class Form5
         Me.dgvPersediaanBB.Size = New System.Drawing.Size(1150, 325)
         Me.dgvPersediaanBB.TabIndex = 2
         '
+        'dgvPersediaanBBCol1
+        '
+        Me.dgvPersediaanBBCol1.HeaderText = "Kode Bahan Baku"
+        Me.dgvPersediaanBBCol1.MinimumWidth = 6
+        Me.dgvPersediaanBBCol1.Name = "dgvPersediaanBBCol1"
+        Me.dgvPersediaanBBCol1.ReadOnly = True
+        Me.dgvPersediaanBBCol1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvPersediaanBBCol2
+        '
+        Me.dgvPersediaanBBCol2.HeaderText = "Nama Bahan Baku"
+        Me.dgvPersediaanBBCol2.MinimumWidth = 6
+        Me.dgvPersediaanBBCol2.Name = "dgvPersediaanBBCol2"
+        Me.dgvPersediaanBBCol2.ReadOnly = True
+        Me.dgvPersediaanBBCol2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvPersediaanBBCol3
+        '
+        Me.dgvPersediaanBBCol3.HeaderText = "Stok"
+        Me.dgvPersediaanBBCol3.MinimumWidth = 6
+        Me.dgvPersediaanBBCol3.Name = "dgvPersediaanBBCol3"
+        Me.dgvPersediaanBBCol3.ReadOnly = True
+        Me.dgvPersediaanBBCol3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvPersediaanBBCol4
+        '
+        Me.dgvPersediaanBBCol4.HeaderText = "Satuan"
+        Me.dgvPersediaanBBCol4.MinimumWidth = 6
+        Me.dgvPersediaanBBCol4.Name = "dgvPersediaanBBCol4"
+        Me.dgvPersediaanBBCol4.ReadOnly = True
+        Me.dgvPersediaanBBCol4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvPersediaanBBCol5
+        '
+        Me.dgvPersediaanBBCol5.HeaderText = "Stok Minimum"
+        Me.dgvPersediaanBBCol5.MinimumWidth = 6
+        Me.dgvPersediaanBBCol5.Name = "dgvPersediaanBBCol5"
+        Me.dgvPersediaanBBCol5.ReadOnly = True
+        Me.dgvPersediaanBBCol5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
         'lbltxtStokKode
         '
         Me.lbltxtStokKode.BackColor = System.Drawing.Color.Transparent
@@ -1002,6 +1082,46 @@ Partial Class Form5
         Me.dgvPengadaanBB.Size = New System.Drawing.Size(1150, 325)
         Me.dgvPengadaanBB.TabIndex = 2
         '
+        'dgvPengadaanBBCol1
+        '
+        Me.dgvPengadaanBBCol1.HeaderText = "Kode Pengadaan"
+        Me.dgvPengadaanBBCol1.MinimumWidth = 6
+        Me.dgvPengadaanBBCol1.Name = "dgvPengadaanBBCol1"
+        Me.dgvPengadaanBBCol1.ReadOnly = True
+        Me.dgvPengadaanBBCol1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvPengadaanBBCol2
+        '
+        Me.dgvPengadaanBBCol2.HeaderText = "Tanggal"
+        Me.dgvPengadaanBBCol2.MinimumWidth = 6
+        Me.dgvPengadaanBBCol2.Name = "dgvPengadaanBBCol2"
+        Me.dgvPengadaanBBCol2.ReadOnly = True
+        Me.dgvPengadaanBBCol2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvPengadaanBBCol4
+        '
+        Me.dgvPengadaanBBCol4.HeaderText = "Bahan Baku"
+        Me.dgvPengadaanBBCol4.MinimumWidth = 6
+        Me.dgvPengadaanBBCol4.Name = "dgvPengadaanBBCol4"
+        Me.dgvPengadaanBBCol4.ReadOnly = True
+        Me.dgvPengadaanBBCol4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvPengadaanBBCol5
+        '
+        Me.dgvPengadaanBBCol5.HeaderText = "Jumlah"
+        Me.dgvPengadaanBBCol5.MinimumWidth = 6
+        Me.dgvPengadaanBBCol5.Name = "dgvPengadaanBBCol5"
+        Me.dgvPengadaanBBCol5.ReadOnly = True
+        Me.dgvPengadaanBBCol5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvPengadaanBBCol6
+        '
+        Me.dgvPengadaanBBCol6.HeaderText = "Status"
+        Me.dgvPengadaanBBCol6.MinimumWidth = 6
+        Me.dgvPengadaanBBCol6.Name = "dgvPengadaanBBCol6"
+        Me.dgvPengadaanBBCol6.ReadOnly = True
+        Me.dgvPengadaanBBCol6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
         'lblBrand
         '
         Me.lblBrand.BackColor = System.Drawing.Color.Transparent
@@ -1144,6 +1264,54 @@ Partial Class Form5
         Me.dgvCekPenggunaanBB.Size = New System.Drawing.Size(1150, 440)
         Me.dgvCekPenggunaanBB.TabIndex = 4
         '
+        'dgvCekPenggunaanBBCol1
+        '
+        Me.dgvCekPenggunaanBBCol1.HeaderText = "Tanggal"
+        Me.dgvCekPenggunaanBBCol1.MinimumWidth = 6
+        Me.dgvCekPenggunaanBBCol1.Name = "dgvCekPenggunaanBBCol1"
+        Me.dgvCekPenggunaanBBCol1.ReadOnly = True
+        Me.dgvCekPenggunaanBBCol1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekPenggunaanBBCol2
+        '
+        Me.dgvCekPenggunaanBBCol2.HeaderText = "Kode Pengerjaan"
+        Me.dgvCekPenggunaanBBCol2.MinimumWidth = 6
+        Me.dgvCekPenggunaanBBCol2.Name = "dgvCekPenggunaanBBCol2"
+        Me.dgvCekPenggunaanBBCol2.ReadOnly = True
+        Me.dgvCekPenggunaanBBCol2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekPenggunaanBBCol3
+        '
+        Me.dgvCekPenggunaanBBCol3.HeaderText = "Bahan Baku"
+        Me.dgvCekPenggunaanBBCol3.MinimumWidth = 6
+        Me.dgvCekPenggunaanBBCol3.Name = "dgvCekPenggunaanBBCol3"
+        Me.dgvCekPenggunaanBBCol3.ReadOnly = True
+        Me.dgvCekPenggunaanBBCol3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekPenggunaanBBCol4
+        '
+        Me.dgvCekPenggunaanBBCol4.HeaderText = "Jumlah"
+        Me.dgvCekPenggunaanBBCol4.MinimumWidth = 6
+        Me.dgvCekPenggunaanBBCol4.Name = "dgvCekPenggunaanBBCol4"
+        Me.dgvCekPenggunaanBBCol4.ReadOnly = True
+        Me.dgvCekPenggunaanBBCol4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekPenggunaanBBCol5
+        '
+        Me.dgvCekPenggunaanBBCol5.HeaderText = "Satuan"
+        Me.dgvCekPenggunaanBBCol5.MinimumWidth = 6
+        Me.dgvCekPenggunaanBBCol5.Name = "dgvCekPenggunaanBBCol5"
+        Me.dgvCekPenggunaanBBCol5.ReadOnly = True
+        Me.dgvCekPenggunaanBBCol5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'dgvCekPenggunaanBBCol6
+        '
+        Me.dgvCekPenggunaanBBCol6.HeaderText = "Kondisi/Laporan"
+        Me.dgvCekPenggunaanBBCol6.MinimumWidth = 6
+        Me.dgvCekPenggunaanBBCol6.Name = "dgvCekPenggunaanBBCol6"
+        Me.dgvCekPenggunaanBBCol6.ReadOnly = True
+        Me.dgvCekPenggunaanBBCol6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
         'btnLogout
         '
         Me.btnLogout.BackColor = System.Drawing.Color.MidnightBlue
@@ -1269,174 +1437,6 @@ Partial Class Form5
         Me.tpHitungROP.Size = New System.Drawing.Size(1202, 558)
         Me.tpHitungROP.TabIndex = 5
         Me.tpHitungROP.Text = "Perhitungan ROP dan Safety Stock"
-        '
-        'dgvPengadaanBBCol1
-        '
-        Me.dgvPengadaanBBCol1.HeaderText = "Kode Pengadaan"
-        Me.dgvPengadaanBBCol1.MinimumWidth = 6
-        Me.dgvPengadaanBBCol1.Name = "dgvPengadaanBBCol1"
-        Me.dgvPengadaanBBCol1.ReadOnly = True
-        Me.dgvPengadaanBBCol1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvPengadaanBBCol2
-        '
-        Me.dgvPengadaanBBCol2.HeaderText = "Tanggal"
-        Me.dgvPengadaanBBCol2.MinimumWidth = 6
-        Me.dgvPengadaanBBCol2.Name = "dgvPengadaanBBCol2"
-        Me.dgvPengadaanBBCol2.ReadOnly = True
-        Me.dgvPengadaanBBCol2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvPengadaanBBCol4
-        '
-        Me.dgvPengadaanBBCol4.HeaderText = "Bahan Baku"
-        Me.dgvPengadaanBBCol4.MinimumWidth = 6
-        Me.dgvPengadaanBBCol4.Name = "dgvPengadaanBBCol4"
-        Me.dgvPengadaanBBCol4.ReadOnly = True
-        Me.dgvPengadaanBBCol4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvPengadaanBBCol5
-        '
-        Me.dgvPengadaanBBCol5.HeaderText = "Jumlah"
-        Me.dgvPengadaanBBCol5.MinimumWidth = 6
-        Me.dgvPengadaanBBCol5.Name = "dgvPengadaanBBCol5"
-        Me.dgvPengadaanBBCol5.ReadOnly = True
-        Me.dgvPengadaanBBCol5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvPengadaanBBCol6
-        '
-        Me.dgvPengadaanBBCol6.HeaderText = "Status"
-        Me.dgvPengadaanBBCol6.MinimumWidth = 6
-        Me.dgvPengadaanBBCol6.Name = "dgvPengadaanBBCol6"
-        Me.dgvPengadaanBBCol6.ReadOnly = True
-        Me.dgvPengadaanBBCol6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvPersediaanBBCol1
-        '
-        Me.dgvPersediaanBBCol1.HeaderText = "Kode Bahan Baku"
-        Me.dgvPersediaanBBCol1.MinimumWidth = 6
-        Me.dgvPersediaanBBCol1.Name = "dgvPersediaanBBCol1"
-        Me.dgvPersediaanBBCol1.ReadOnly = True
-        Me.dgvPersediaanBBCol1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvPersediaanBBCol2
-        '
-        Me.dgvPersediaanBBCol2.HeaderText = "Nama Bahan Baku"
-        Me.dgvPersediaanBBCol2.MinimumWidth = 6
-        Me.dgvPersediaanBBCol2.Name = "dgvPersediaanBBCol2"
-        Me.dgvPersediaanBBCol2.ReadOnly = True
-        Me.dgvPersediaanBBCol2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvPersediaanBBCol3
-        '
-        Me.dgvPersediaanBBCol3.HeaderText = "Stok"
-        Me.dgvPersediaanBBCol3.MinimumWidth = 6
-        Me.dgvPersediaanBBCol3.Name = "dgvPersediaanBBCol3"
-        Me.dgvPersediaanBBCol3.ReadOnly = True
-        Me.dgvPersediaanBBCol3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvPersediaanBBCol4
-        '
-        Me.dgvPersediaanBBCol4.HeaderText = "Satuan"
-        Me.dgvPersediaanBBCol4.MinimumWidth = 6
-        Me.dgvPersediaanBBCol4.Name = "dgvPersediaanBBCol4"
-        Me.dgvPersediaanBBCol4.ReadOnly = True
-        Me.dgvPersediaanBBCol4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvPersediaanBBCol5
-        '
-        Me.dgvPersediaanBBCol5.HeaderText = "Stok Minimum"
-        Me.dgvPersediaanBBCol5.MinimumWidth = 6
-        Me.dgvPersediaanBBCol5.Name = "dgvPersediaanBBCol5"
-        Me.dgvPersediaanBBCol5.ReadOnly = True
-        Me.dgvPersediaanBBCol5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekPenggunaanBBCol1
-        '
-        Me.dgvCekPenggunaanBBCol1.HeaderText = "Tanggal"
-        Me.dgvCekPenggunaanBBCol1.MinimumWidth = 6
-        Me.dgvCekPenggunaanBBCol1.Name = "dgvCekPenggunaanBBCol1"
-        Me.dgvCekPenggunaanBBCol1.ReadOnly = True
-        Me.dgvCekPenggunaanBBCol1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekPenggunaanBBCol2
-        '
-        Me.dgvCekPenggunaanBBCol2.HeaderText = "Kode Pengerjaan"
-        Me.dgvCekPenggunaanBBCol2.MinimumWidth = 6
-        Me.dgvCekPenggunaanBBCol2.Name = "dgvCekPenggunaanBBCol2"
-        Me.dgvCekPenggunaanBBCol2.ReadOnly = True
-        Me.dgvCekPenggunaanBBCol2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekPenggunaanBBCol3
-        '
-        Me.dgvCekPenggunaanBBCol3.HeaderText = "Bahan Baku"
-        Me.dgvCekPenggunaanBBCol3.MinimumWidth = 6
-        Me.dgvCekPenggunaanBBCol3.Name = "dgvCekPenggunaanBBCol3"
-        Me.dgvCekPenggunaanBBCol3.ReadOnly = True
-        Me.dgvCekPenggunaanBBCol3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekPenggunaanBBCol4
-        '
-        Me.dgvCekPenggunaanBBCol4.HeaderText = "Jumlah"
-        Me.dgvCekPenggunaanBBCol4.MinimumWidth = 6
-        Me.dgvCekPenggunaanBBCol4.Name = "dgvCekPenggunaanBBCol4"
-        Me.dgvCekPenggunaanBBCol4.ReadOnly = True
-        Me.dgvCekPenggunaanBBCol4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekPenggunaanBBCol5
-        '
-        Me.dgvCekPenggunaanBBCol5.HeaderText = "Satuan"
-        Me.dgvCekPenggunaanBBCol5.MinimumWidth = 6
-        Me.dgvCekPenggunaanBBCol5.Name = "dgvCekPenggunaanBBCol5"
-        Me.dgvCekPenggunaanBBCol5.ReadOnly = True
-        Me.dgvCekPenggunaanBBCol5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekPenggunaanBBCol6
-        '
-        Me.dgvCekPenggunaanBBCol6.HeaderText = "Kondisi/Laporan"
-        Me.dgvCekPenggunaanBBCol6.MinimumWidth = 6
-        Me.dgvCekPenggunaanBBCol6.Name = "dgvCekPenggunaanBBCol6"
-        Me.dgvCekPenggunaanBBCol6.ReadOnly = True
-        Me.dgvCekPenggunaanBBCol6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekPenjualanCol1
-        '
-        Me.dgvCekPenjualanCol1.HeaderText = "Kode Penjualan"
-        Me.dgvCekPenjualanCol1.MinimumWidth = 6
-        Me.dgvCekPenjualanCol1.Name = "dgvCekPenjualanCol1"
-        Me.dgvCekPenjualanCol1.ReadOnly = True
-        Me.dgvCekPenjualanCol1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekPenjualanCol2
-        '
-        Me.dgvCekPenjualanCol2.HeaderText = "Tanggal"
-        Me.dgvCekPenjualanCol2.MinimumWidth = 6
-        Me.dgvCekPenjualanCol2.Name = "dgvCekPenjualanCol2"
-        Me.dgvCekPenjualanCol2.ReadOnly = True
-        Me.dgvCekPenjualanCol2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekPenjualanCol3
-        '
-        Me.dgvCekPenjualanCol3.HeaderText = "Kode Pesanan"
-        Me.dgvCekPenjualanCol3.MinimumWidth = 6
-        Me.dgvCekPenjualanCol3.Name = "dgvCekPenjualanCol3"
-        Me.dgvCekPenjualanCol3.ReadOnly = True
-        Me.dgvCekPenjualanCol3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekPenjualanCol4
-        '
-        Me.dgvCekPenjualanCol4.HeaderText = "Total (Rp)"
-        Me.dgvCekPenjualanCol4.MinimumWidth = 6
-        Me.dgvCekPenjualanCol4.Name = "dgvCekPenjualanCol4"
-        Me.dgvCekPenjualanCol4.ReadOnly = True
-        Me.dgvCekPenjualanCol4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'dgvCekPenjualanCol5
-        '
-        Me.dgvCekPenjualanCol5.HeaderText = "Metode Pembayaran"
-        Me.dgvCekPenjualanCol5.MinimumWidth = 6
-        Me.dgvCekPenjualanCol5.Name = "dgvCekPenjualanCol5"
-        Me.dgvCekPenjualanCol5.ReadOnly = True
-        Me.dgvCekPenjualanCol5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'Form5
         '
